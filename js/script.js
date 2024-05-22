@@ -1,5 +1,4 @@
-let result = 0
+let d = prompt('длина')
+let p = d * 4
 
-
-
-document.getElementById("result").innerHTML = result
+alert(p)
