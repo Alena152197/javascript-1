@@ -263,5 +263,189 @@
 
 // console.log(table);
 
+//////////////////////////////////////////////////////////////////////////////////
 
+// следующее домашнее задание
+
+// задание 1
+
+
+// function Compare(a, b) {
+//     if (a < b) {
+//         return -1;
+//     } else if (a > b) {
+//         return 1;
+//     } else if (a == b) {
+//         return 0;
+//     } else {
+//         return "Вы ошиблись при вводе чисел";
+//     }
+// };
+
+// let a = +prompt("Введите первое число для сравнения ");
+// let b = +prompt("Введите второе число для сравнения ");
+
+// alert(Compare(a, b));
+
+
+
+// задание 2
+
+// function Factorial(n) {
+//     if (n == 1) return 1;
+//     return n * Factorial(n - 1);
+// };
+
+
+
+// let x = 1;
+// do {
+//     x = Math.trunc(
+//         +prompt("Для вычисления факториала введите положительное число от 1: ")
+//     );
+// } while (x < 1);
+
+// alert(Factorial(x));
+
+
+// задание 3
+
+// function Splitter(a, b, c) {
+//     return a * 100 + b * 10 + c;
+// };
+
+// let x = 0;
+// let y = 0;
+// let z = 0;
+// do {
+//     x = Math.trunc(Math.abs(+prompt("Введите первое число: ")));
+//     y = Math.trunc(Math.abs(+prompt("Введите второе число: ")));
+//     z = Math.trunc(Math.abs(+prompt("Введите третье число: ")));
+// } while (x > 9 || y > 9 || z > 9);
+
+// alert(Splitter(x, y, z));
+
+
+// задание 4
+
+// function Square(a, b) {
+//     if (arguments.length == 1) {
+//         return a * a;
+//     }
+//     return a * b;
+// }
+
+// alert(Square(3, 4));
+// alert(Square(3));
+
+
+// задание 5
+
+// function PerfectNumber(a) {
+//     let sum = 0;
+//     for (let i = 1; i < a; i++) {
+//         if (a % i === 0) {
+//             sum += i;
+//         }
+//     }
+//     if (sum === a) {
+//         return "ДА! Это совершенное число!";
+//     }
+//     return "НЕТ! Это не совершенное число!";
+// };
+
+// let x = Math.trunc(+prompt("Введите число: "));
+// alert(PerfectNumber(x));
+
+
+// задание 6
+
+// function PerfectNumber(a) {
+//     let sum = 0;
+//     a = Math.abs(a);
+//     for (let i = 1; i < a; i++) {
+//         if (a % i == 0) {
+//             sum += i;
+//         }
+//     }
+//     if (sum == a) {
+//         return 1;
+//     }
+//     return 0;
+// };
+
+// let x = 0;
+// let y = 0;
+// let result = "";
+// let perfectNumber = 0;
+
+// do {
+//     x = Math.trunc(+prompt("Введите первое число : "));
+//     y = Math.trunc(+prompt("Введите конечное число : "));
+// } while (x != +x || y != +y);
+
+// for (let j = x; j <= y; j++) {
+//     perfectNumber = PerfectNumber(j);
+//     if (perfectNumber == 1) {
+//         result += j + ", ";
+//     }
+// };
+
+// if (result == "") {
+//     alert("совершенных чисел нет");
+// } else {
+//     alert(result);
+// };
+
+
+// задание 7
+
+
+// function Time(a, b = 0, c = 0) {
+//     if (a < 10) {
+//         a = "0" + a;
+//     }
+//     if (b < 10) {
+//         b = "0" + b;
+//     }
+//     if (c < 10) {
+//         c = "0" + c;
+//     }
+//     return `${a} : ${b} : ${c}`;
+// };
+
+// let x = 0;
+// let y = 0;
+// let z = 0;
+
+// do {
+//     x = Math.abs(Math.trunc(+prompt("Введите часы от 0 до 23: ")));
+//     y = Math.abs(Math.trunc(+prompt("Введите минуты от 0 до 59: ")));
+//     c = Math.abs(Math.trunc(+prompt("Введите секунды от 0 до 59: ")));
+// } while (x > 23 || y > 59 || z > 59);
+
+// alert("Текущее время: " + Time(x, y, z));
+
+
+
+// задание 8
+
+// function TimeToSeconds(a, b = 0, c = 0) {
+//     let timeToSeconds = a * 3600 + b * 60 + c;
+//     return timeToSeconds;
+// }
+
+// let x = 0;
+// let y = 0;
+// let z = 0;
+
+// do {
+//     x = Math.abs(Math.trunc(+prompt("Введите часы от 0 до 23: ")));
+//     y = Math.abs(Math.trunc(+prompt("Введите минуты от 0 до 59: ")));
+//     z = Math.abs(Math.trunc(+prompt("Введите секунды от 0 до 59: ")));
+// } while (x > 23 || y > 59 || z > 59);
+
+// alert(
+//     "От начала суток это составляет " + TimeToSeconds(x, y, z) + " секунд."
+// );
 
