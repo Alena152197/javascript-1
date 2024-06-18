@@ -1,8 +1,9 @@
+//задание 1
 // const car = {
-//     manufacturer: 'Renault',
-//     model: 'Megan',
+//     manufacturer: "Mercedes Benz",
+//     model: "c230",
 //     year: 2008,
-//     averageSpeed: 80,
+//     averageSpeed: 70,
 //     showInfo() {
 //         console.log(`Производитель: ${this.manufacturer},\n модель: ${this.model},\n Cредняя скорость: ${this.averageSpeed} `);
 //     },
@@ -20,6 +21,152 @@
 // car.showInfo();
 // console.log(car.getTravelTime(500));
 // console.log(car.getTravelTime(800));
+
+// задание 2
+
+// function printFract(fract, printer = (str) => console.log(str)) {
+//     printer(`${fract.num}/${fract.denom}`);
+// }
+
+// function addition(fractA, fractB) {
+//     return reduction({ num: (fractA.num * fractB.denom) + (fractB.num * fractA.denom), denom: fractA.denom * fractB.denom });
+// }
+
+// function subtraction(fractA, fractB) {
+//     return reduction({ num: (fractA.num * fractB.denom) - (fractB.num * fractA.denom), denom: fractA.denom * fractB.denom });
+// }
+
+// function multiplication(fractA, fractB) {
+//     return reduction({ num: fractA.num * fractB.num, denom: fractA.denom * fractB.denom });
+// }
+
+// function division(fractA, fractB) {
+//     return reduction({ num: fractA.num * fractB.denom, denom: fractA.denom * fractB.num });
+// }
+
+// function reduction(fact) {
+//     let resOne;
+//     let resTwo;
+
+//     for (let i = 1; i < fact.num + fact.denom; ++i) {
+//         if (fact.num % i == 0 && fact.denom % i == 0) {
+//             resOne = fact.num / i;
+//             resTwo = fact.denom / i;
+//         } else if (fact.num == fact.denom) {
+//             resOne = 1;
+//             resTwo = 1;
+//         }
+//     }
+//     return { num: resOne, denom: resTwo }
+// }
+
+// {
+//     let fractOne = { num: 3, denom: 6 };
+//     let fractTwo = { num: 2, denom: 5 };
+
+//     printFract(addition(fractOne, fractTwo));
+//     printFract(subtraction(fractOne, fractTwo));
+//     printFract(multiplication(fractOne, fractTwo));
+//     printFract(division(fractOne, fractTwo));
+// }
+
+// 3 задание
+// const time = {
+//     h: 2,
+//     m: 23,
+//     s: 40,
+//     showTime() {
+//         console.log(`${this.h}:${this.m}:${this.s}`);
+//     },
+//     changeSeconds(sec) {
+//         let hours = sec / 3600;
+//         this.h += Math.floor(hours);
+//         let minutes = (sec - Math.floor(hours) * 3600) / 60;
+//         this.m += Math.floor(minutes);
+//         this.s = sec - (Math.floor(hours) * 3600) - (Math.floor(minutes) * 60);
+
+//         if (this.s >= 60) {
+//             this.s %= 60;
+//             this.m += Math.floor(this.s / 60);
+//         }
+//         if (this.m >= 60) {
+//             this.m %= 60;
+//             this.h += Math.floor(this.m / 60);
+//         }
+
+//         return time;
+//     },
+//     changeMinutes(min) {
+//         let hours = min / 60;
+//         this.h += Math.floor(hours);
+//         this.m += min - (Math.floor(hours) * 60);
+
+//         if (this.m >= 60) {
+//             this.m %= 60;
+//             this.h += Math.floor(hours / 60);
+//         }
+
+//         return time;
+//     },
+//     changeHours(hour) {
+//         this.h = this.h + hour;
+
+//         return time;
+//     },
+// }
+
+// console.log(time);
+// time.showTime();
+// console.log(time.changeSeconds(4500));
+// console.log(time.changeSeconds(8050));
+// console.log(time.changeSeconds(108050));
+// console.log(time);
+// console.log(time.changeMinutes(85));
+// console.log(time.changeMinutes(12));
+// console.log(time);
+// console.log(time.changeHours(3));
+// console.log(time.changeHours(4));
+// console.log(time);
+
+// const makeTime = (h = 0, m = 0, s = 0) => {
+//     (h < 9 && h >= 0) ? (h = `0${h}`) : h;
+
+//     (m >= 0 && m < 9) ? (m = `${m}`) : (m >= 0 && m < 60) ? m : console.log('error.Enter 0 < m < 60');
+
+//     (s >= 0 && s < 9) ? (s = `${s}`) : (s >= 0 && s < 60) ? s : console.log('error.Enter 0 < s < 60');
+
+//     return {
+//         h,
+//         m,
+//         s,
+//     };
+// }
+
+// const time1 = makeTime(6, 12, 50);
+// const time3 = makeTime(3, 47, 62);
+// const time4 = makeTime(18, 38, 22);
+// console.log(time1);
+// console.log(time4);
+// const showTime = (time = {}) => {
+//     return console.log(`${time.h}:${time.m}:${time.s}`);
+
+// }
+// showTime(time1);
+// showTime(time4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
