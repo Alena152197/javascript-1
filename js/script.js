@@ -1,22 +1,66 @@
-// const car = {
-//     manufacturer: 'Renault',
-//     model: 'Megan',
-//     year: 2008,
-//     averageSpeed: 80,
-//     showInfo() {
-//         console.log(`Производитель: ${this.manufacturer},\n модель: ${this.model},\n Cредняя скорость: ${this.averageSpeed} `);
+// let shopping = [
+//     {
+//         name: 'banan',
+//         count: 3,
+//         price: 80,
 //     },
-//     getTravelTime(s = 0, restInterval = 1) {
-//         if (isNaN(s) || isNaN(restInterval)) {
-//             return 'Error';
-//         }
-//         let travelTime = s / this.averageSpeed;
-//         let numberOfStops = Math.floor(travelTime / 4);
-//         travelTime += numberOfStops * restInterval;
-//         return travelTime;
+//     {
+//         name: 'kivi',
+//         count: 5,
+//         price: 150,
+
 //     },
+//     {
+//         name: 'topt',
+//         count: 1,
+//         price: 500,
+//     },
+//     {
+//         name: 'mico',
+//         count: 6,
+//         price: 120,
+//     },
+// ]
+
+// let printRes = (arr = []) => {
+//     let res = [...arr];
+//     res.forEach(product => {
+//         let sum = product.count * product.price;
+//         console.log(`${product.count} x ${product.price}\n ${product.name}.....Sum: ${sum}`);
+//     });
+
+//     let total = res.map((product) => product.count * product.price)
+//         .reduce((sum, current) => sum + current, 0);
+//         console.log(`Total: ${total}`);
+//         return res;
 // }
 
-// car.showInfo();
-// console.log(car.getTravelTime(500));
-// console.log(car.getTravelTime(800));
+// printRes(shopping);
+
+
+// let newProduct = (arr = []) => {
+//     let res = [...arr];
+//     let maxCost = 0;
+//     for (let product of res) {
+//         let cost = product.price * product.count
+//         if ( cost > maxCost ) {
+//             maxCost = cost;
+//         }
+//     }
+//     return maxCost;
+// }
+
+// console.log(newProduct(shopping))
+
+
+// let averageCost = (arr = []) => {
+//     let res = [...arr];
+//     let sum = 0;
+
+//     for (let product of res) {
+//         sum += product.price * product.count;
+//     }
+//     return (sum / res.length).toFixed(2);
+// }
+
+// console.log(averageCost(shopping));

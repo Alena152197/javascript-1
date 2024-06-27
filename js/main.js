@@ -1,3 +1,167 @@
+// задание 1
+
+// let shopping = [
+//     {
+//         name: 'banan',
+//         count: 3,
+//         isBought: false,
+//     },
+//     {
+//         name: 'kivi',
+//         count: 5,
+//         isBought: true,
+//     },
+//     {
+//         name: 'topt',
+//         count: 1,
+//         isBought: false,
+//     },
+//     {
+//         name: 'mico',
+//         count: 6,
+//         isBought: true,
+//     },
+// ]
+
+// let sortShoppingList = [...shopping];
+// sortShoppingList.sort( (a,b) => {
+//     if (a.isBought === true && b.isBought === false) {
+//         return 1;
+//     }
+//     if (a.isBought === true && b.isBought === true) {
+//         return -1;
+//     }
+//     return 0;
+// })
+
+// sortShoppingList.sort( (a,b) => a.isBought - b.isBought);
+
+// console.log(sortShoppingList);
+
+
+// let newShoppingList = (name = '', count = 0, arr = []) => {
+//     let res = [...arr];
+//     if (res.find(item => item.name === name)) {
+//         for (let i = 0; i < res.length; i++)
+//             if (name === res[i].name) {
+//                 res[i].count;
+//             }
+//     } else {
+//         res.push({
+//             name,
+//             count,
+//             isBought: false,
+//         })
+//     }
+//     return res;
+// }
+
+// let newList = [...shopping];
+// console.log(newList)
+// console.log(newShoppingList('kasha', 3, newList))
+// console.log(newShoppingList('shocolad', 2, newList))
+
+
+// let addFlitList = (arr = [], name = '') => {
+//     let res = [...arr];
+//     res.forEach(product => {
+//         if (name === product.name) {
+//             product.isBought = true;
+//         }
+//     });
+//     return res;
+// }
+
+// console.log(addFlitList(shopping, 'tort'));
+// console.log(addFlitList(shopping, 'banana'))
+
+
+// задание 2
+
+// let shopping = [
+//     {
+//         name: 'banan',
+//         count: 3,
+//         price: 80,
+//     },
+//     {
+//         name: 'kivi',
+//         count: 5,
+//         price: 150,
+
+//     },
+//     {
+//         name: 'topt',
+//         count: 1,
+//         price: 500,
+//     },
+//     {
+//         name: 'mico',
+//         count: 6,
+//         price: 120,
+//     },
+// ]
+
+// let printRes = (arr = []) => {
+//     let res = [...arr];
+//     res.forEach(product => {
+//         let sum = product.count * product.price;
+//         console.log(`${product.count} x ${product.price}\n ${product.name}.....Sum: ${sum}`);
+//     });
+
+//     let total = res.map((product) => product.count * product.price)
+//         .reduce((sum, current) => sum + current, 0);
+//         console.log(`Total: ${total}`);
+//         return res;
+// }
+
+// printRes(shopping);
+
+
+// let newProduct = (arr = []) => {
+//     let res = [...arr];
+//     let maxCost = 0;
+//     for (let product of res) {
+//         let cost = product.price * product.count
+//         if ( cost > maxCost ) {
+//             maxCost = cost;
+//         }
+//     }
+//     return maxCost;
+// }
+
+// console.log(newProduct(shopping))
+
+
+// let averageCost = (arr = []) => {
+//     let res = [...arr];
+//     let sum = 0;
+
+//     for (let product of res) {
+//         sum += product.price * product.count;
+//     }
+//     return (sum / res.length).toFixed(2);
+// }
+
+// console.log(averageCost(shopping));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // //задание 1
 // let car = {
 //     manufacturer: "Mers",
