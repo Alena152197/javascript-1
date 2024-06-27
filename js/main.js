@@ -146,6 +146,76 @@
 // console.log(averageCost(shopping));
 
 
+// задание 3
+
+// let academiy = [
+//     {
+//         name: '110',
+//         places: '15',
+//         faculty: 'Cybernetics'
+//     },
+//     {
+//         name: '101',
+//         places: '17',
+//         faculty: 'Matematica'
+//     },
+//     {
+//         name: '105',
+//         places: '19',
+//         faculty: 'Software'
+//     },
+//     {
+//         name: '120',
+//         places: '20',
+//         faculty: 'Engineering'
+//     },
+// ];
+
+// let group = {
+//     name: 'SW-2019',
+//     places: '25',
+//     faculty: 'Engineering',
+// };
+
+// let classRoom = (arr = []) => {
+//     let academiy = [];
+//     for (let i of arr) {
+//         academiy.push(i.name);
+//     }
+//     return `All rooms: ${academiy.join('; ')}.`;
+// }
+// console.log(classRoom(academiy));
+
+// let showAcademia = (arr = [], faculty = '') => {
+//     let facultyRoom = [];
+    
+//     for (let i of arr) {
+//         if (i.faculty.toLowerCase() === faculty.toLocaleLowerCase()) {
+//             facultyRoom.push(i.name);
+//         }
+//     }
+//     return `All rooms for "${faculty}" faculty: ${facultyRoom.join('; ')}.`;
+
+// } 
+
+// console.log(showAcademia(academiy, 'Engineering'));
+
+// let arrPlace = (arr = []) => {
+//     let arr1 = [...arr];
+//     arr1.sort( (a,b) => a.place - b.place );
+//     return arr1;
+// };
+
+// let arrName = (arr = []) => {
+//     let arr2 = [...arr];
+//     arr2.sort( (a,b) => a.name - b.name );
+//     return arr2
+// }
+
+// console.log(arrPlace(academiy))
+// console.log(arrName(academiy))
+
+
 
 
 
