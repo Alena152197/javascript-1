@@ -1,3 +1,19 @@
+// задание 3
+
+
+// (function() {
+//     let div = document.getElementsByClassName('block');
+//     style = div[0].style;
+
+//     style.color = "red";
+//     style.fontSize = "50px";
+//     style.textAlign = "center";
+//     style.textDecoration = "underline"
+    
+// })()
+
+
+
 // задание 1
 
 // let shopping = [
