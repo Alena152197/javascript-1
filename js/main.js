@@ -63,6 +63,194 @@
 // задание 3
 
 
+// let str = 'БОЛЬШИЕ БУКВЫ на маленькие, маленькие – НА БОЛЬШИЕ 123456789';
+
+// function changeRegister (str) {
+//     let result = []
+
+//     for(let i = 0; i < str.length; i++) {
+//         if(/^\d+$/.test(str[i])) {
+//             result.push('-');
+//         }
+//         else if(str[i].toUpperCase() === str[i]) {
+//             result.push(str[i].toLowerCase());
+//         }
+//         else if(str[i].toLowerCase() === str[i]) {
+//             result.push(str[i].toUpperCase());
+//         }
+//         else {
+//             result.push(str[i]);
+//         }
+//     }
+//     return result.join('');
+// }
+
+// console.log(str)
+// console.log(changeRegister(str))
+
+// задание 4
+
+
+// function camelize(myStr) {
+    //     let wordArray = myStr.split('-');
+    //     for (let i = 0; i < wordArray.length; ++i) {
+    //         if (i == 0) continue;
+    //         let charArray = wordArray[i].split("");
+    //         charArray[0] = wordArray[i].charAt(0).toUpperCase();
+    //         wordArray[i] = charArray.join("");
+    //     }
+    //     myStr = wordArray.join("");
+    //     return myStr;
+    // }
+    
+    // let test1 = "font-size";
+    // console.log(camelize(test1));
+    // let test2 = "background-color";
+    // console.log(camelize(test2));
+    // let test3 = "textalign";
+    // console.log(camelize(test3));
+
+
+    // задание 5
+
+
+    // function makeAbbr(words) {
+    //     let abbreviation = '';
+    //     let wordArray = words.split(' ');
+    
+    //     for (let i = 0;i < wordArray.length; i++) {
+    //             abbreviation += wordArray[i] [0];
+    //         }    
+    //     return abbreviation.toUpperCase();
+    // }
+    
+    // console.log(makeAbbr('cascading style sheets'));
+
+
+    // задание 6
+
+    // function task(n) {
+    //     let newText = "";
+    //     while(n > 0) {
+    //         text = prompt('Ввод строки: ');
+    //         newText += text;
+    //         newText += " ";
+    //         // console.log(newText)
+    //         n--;
+    //     }
+    //     return newText;
+    // }
+    
+    // function task6() {
+    //     let n = prompt("Ввести количество строк, которое нужно добавить: ");
+    //     alert(task(n));
+    // }
+    
+    // alert(task6());
+
+
+    // задание 7 
+
+// let a = 0;
+// let b = 0;
+// let result = true;
+// let action_sign = "";
+
+// function calc() {
+// do {
+//     a = +prompt("Введите первое число: ");
+//     b = +prompt("Введите второе число: ");
+//     action_sign = prompt("Введите знак операции (*, /, + либо -): ");
+//     switch (action_sign) {
+//         case "+":
+//             alert(
+//                 `${a} ${action_sign} ${b} = ${a + b}`
+//             );
+//             break;
+//         case "*":
+//             alert(
+//                 `${a} ${action_sign} ${b} = ${a * b}`
+//             );
+//             break;
+//         case "/":
+//             alert(
+//                 `${a} ${action_sign} ${b} = ${a / b}`
+//             );
+//             break;
+//         case "-":
+//             alert(
+//                 `${a} ${action_sign} ${b} = ${a - b}`
+//             );
+//             break;
+//         default:
+//             alert(`Вы не ввели знак математической операции!`);
+//             break;
+//     }
+//     result = confirm("Хотите выполнить еще одну математическую операцию?");
+// } while (result == true);
+// }
+
+// calc()
+
+
+// задача 8
+
+// let url = new URL('https://javascript.info/profile/admin')
+
+// console.log(url.protocol);
+// console.log(url.host);
+// console.log(url.pathname);
+
+
+// задача 9
+
+
+// let str = '31/08/2024';
+// let arr = str.split('/');
+// console.log(arr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
