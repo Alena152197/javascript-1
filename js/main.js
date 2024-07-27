@@ -1,5 +1,101 @@
 // задание 1
 
+// function printNumbers(from, to) {
+//     let real = from;
+
+//     let timer = setInterval(function() {
+//         alert(real);
+//         if (real == to) {
+//             clearInterval(timer);
+//         } 
+//         real++;
+//     }, 1000);
+// }
+
+// printNumbers(1, 10)
+
+
+// function printNumbers(from, to) {
+//     let real = from;
+
+//     setTimeout(function letGo() {
+//         alert(real);
+//         if (real < to) {
+//             setTimeout(letGo, 1000);
+//         } real++;
+//     }, 1000);
+// }
+
+// printNumbers(1, 10)
+/////////////////////////////////////////////////////
+
+//задание 2
+
+// function work(a, b) {
+//     alert(a + b);
+// }
+
+// function spy(func) {
+//     function wrapper(...args) {
+//         wrapper.calls.push(args);
+//         return func.apply(this, args);
+//     }
+//     wrapper.calls = [];
+//     return wrapper;
+// }
+
+// work(1, 2)
+// work(5, 4)
+///////////////////////////////////////////////////////
+
+// задание 3
+
+// let hamster = {
+//     stomach: [],
+//     eat(food) {
+//         this.stomach = [food];
+//     }
+// };
+
+// let speedy = {
+//     __proto__: hamster
+// };
+
+// let lazy = {
+//     __proto__: hamster
+// };
+
+// speedy.eat('bylka');
+// console.log(speedy.stomach); // первый хомяк
+// console.log(lazy.stomach); // второй хомяк
+
+//////////////////////////////////////////////////////
+
+// задание 4
+
+// function User(name) {
+//     this.name = name;
+// }
+
+// let user = new User('alex');
+// let user1 = new user.constructor('fil');
+
+// console.log(user.name);
+// console.log(user1.name);
+
+
+
+
+
+
+
+
+
+
+
+
+// задание 1
+
 // let words = 'Рекорд одновременного пребывания 10,262, это было 09.08.2019 в 03:30'
 
 // function countCharacters(input) {
