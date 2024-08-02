@@ -1,5 +1,36 @@
 // задание 1
 
+// class Animal {
+//     constructor(name) {
+//         this.name = name;
+//     }
+// }
+
+// class Rabbit extends Animal {
+//     constructor(name) {
+//         super()   
+//         this.name = name;
+//         this.created = Date.now();
+//     }
+// }
+
+// let rabbit = new Rabbit("белый кролик")
+// alert(rabbit.name)
+
+
+// задание 2
+
+// function delay(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+// }
+
+// delay(3000).then(() => alert('выполненно'))
+
+
+
+
+// задание 1
+
 // function printNumbers(from, to) {
 //     let real = from;
 
