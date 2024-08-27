@@ -1,4 +1,4 @@
-body {
+/* body {
     background: rgb(41, 131, 209);
 }
 
@@ -35,4 +35,75 @@ body {
 .menu ul li {
     padding: 3px;
     color: rgb(199, 202, 14);
+} */
+
+
+/*                       вторая задача             */
+
+body {
+    padding: 10px;
+}
+
+.carusel {
+    width: 500px;
+    position: relative;
+    padding:  10px 40px;
+    border: 10px solid rgb(69, 20, 202);
+    border-radius: 20px;
+    background: rgb(233, 93, 12);
+}
+
+.carusel img {
+    width: 130px;
+    height: 130px;
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 50px;
+    padding: 0;
+    background: #ddd;
+    border-radius: 15px;
+    border: 1px solid green;
+    font-size: 30px;
+    line-height: 30px;
+    display: block;
+    color: #7a7777;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+
+.levo {
+    left: 10px;
+}
+
+.pravo {
+    right: 10px;
+}
+
+.menuCarusel {
+    width: 390px;
+    overflow: hidden;
+}
+
+.menuCarusel ul {
+    width: 5000px;
+    height: 130px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    font-size: 0;
+}
+
+.menuCarusel li {
+    display: inline-block;
 }
